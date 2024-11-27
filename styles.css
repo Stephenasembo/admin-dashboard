@@ -1,0 +1,9 @@
+div {
+    border: 1px solid blue;
+}
+
+.container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
