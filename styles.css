@@ -10,6 +10,10 @@
     background-color: #475569;
 }
 
+h2, p {
+    margin: 0;
+}
+
 .sidebar {
     grid-row: 1 / 13;
     grid-column: 1 / 2;
@@ -32,12 +36,19 @@
 }
 
 .main {
-    background-color: green;
     display: grid;
     grid-row: 4 / -1;
     grid-column: 2 / -1;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(10, 1fr);
+}
+
+.titles {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .aside {
@@ -52,6 +63,27 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-row: 1 / 11;
     grid-column: 1 / 2;
+    gap: 16px;
+    margin: 10px 16px;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid aquamarine;
+    background-color: pink;
+    border-radius: 8px;
+    padding: 5px 16px;
+    border-left: 5px solid orange;
+    display: grid;
+    grid-template-rows: min-content 1fr 40px;
+    grid-template-columns: 1fr;
+}
+
+.icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: 1fr;
 }
 
 .dashboard {
