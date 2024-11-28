@@ -51,6 +51,14 @@ h2, p {
     grid-template-columns: 3fr 1fr;
 }
 
+.titles > h2 {
+    align-self: end;
+}
+
+.portfolio {
+    margin-left: 16px;
+}
+
 .aside {
     background-color: red;
     grid-row: 1 / 11;
