@@ -1,197 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="dashboard">
-                <img src="./svg/view-dashboard.svg" alt="dashboard icon" width="48" height="48">
-                <span>Dashboard</span>
-            </div>
-            <div class="navigation">
-                <div class="home">
-                    <img src="svg/home.svg" alt="home icon" width="24" height="24">
-                    Home
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+        <!--Import google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <div class="dashboard">
+                    <img src="./svg/view-dashboard.svg" alt="dashboard icon" width="48" height="48">
+                    <span>Dashboard</span>
                 </div>
-                <div class="profile_icon">
-                    <img src="svg/card-account-details.svg" alt="profile icon" width="24" height="24">
-                    Profile
+                <div class="navigation">
+                    <div class="home">
+                        <img src="svg/home.svg" alt="home icon" width="24" height="24">
+                        Home
+                    </div>
+                    <div class="profile_icon">
+                        <img src="svg/card-account-details.svg" alt="profile icon" width="24" height="24">
+                        Profile
+                    </div>
+                    <div class="messages">
+                        <img src="svg/message-reply-outline.svg" alt="message icon" width="24" height="24">
+                        Messages
+                    </div>
+                    <div class="history">
+                        <img src="svg/clock-time-four-outline.svg" alt="history icon" width="24" height="24">
+                        History
+                    </div>
+                    <div class="tasks">
+                        <img src="svg/file-multiple.svg" alt="tasks icon" width="24" height="24">
+                        Tasks
+                    </div>
+                    <div class="communities">
+                        <img src="svg/account-group.svg" alt="communities icon" width="24" height="24">
+                        Communities
+                    </div> 
                 </div>
-                <div class="messages">
-                    <img src="svg/message-reply-outline.svg" alt="message icon" width="24" height="24">
-                    Messages
-                </div>
-                <div class="history">
-                    <img src="svg/clock-time-four-outline.svg" alt="history icon" width="24" height="24">
-                    History
-                </div>
-                <div class="tasks">
-                    <img src="svg/file-multiple.svg" alt="tasks icon" width="24" height="24">
-                    Tasks
-                </div>
-                <div class="communities">
-                    <img src="svg/account-group.svg" alt="communities icon" width="24" height="24">
-                    Communities
-                </div> 
-            </div>
-            <div class="tools">
-                <div class="settings">
-                    <img src="svg/cog.svg" alt="settings icon" width="24" height="24">
-                    Settings
-                </div>
-                <div class="support">
-                    <img src="svg/face-agent.svg" alt="support icon" width="24" height="24">
-                    Support
-                </div>
-                <div class="privacy">
-                    <img src="svg/shield-check-outline.svg" alt="privacy icon" width="24" height="24">
-                    Privacy
-                </div>
-            </div>
-        </div>
-        <div class="header">
-            <div class="searchBar">
-                <div class="search">
-                    <img src="svg/magnify.svg" alt="search icon" width="24" height="24">
-                    <input type="search" name="search" id="search">
-                </div>
-                <div class="user_profile">
-                    <img src="profiles/bat-9196198.svg" alt="a bat image" width="48" height="48">
-                    <div class="text">
-                        <span class="greeting">Hi there,</span>
-                        <span class="name">Morgan Oakley(@morgan)</span>
+                <div class="tools">
+                    <div class="settings">
+                        <img src="svg/cog.svg" alt="settings icon" width="24" height="24">
+                        Settings
+                    </div>
+                    <div class="support">
+                        <img src="svg/face-agent.svg" alt="support icon" width="24" height="24">
+                        Support
+                    </div>
+                    <div class="privacy">
+                        <img src="svg/shield-check-outline.svg" alt="privacy icon" width="24" height="24">
+                        Privacy
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="profile">
-                    <div class="notification">
-                        <img src="svg/bell-ring.svg" alt="notification icon" width="24" height="24">
-                    </div>    
-                    <img src="profiles/bat-9196198.svg" alt="a bat image" width="36" height="36">
-                    <span>Morgan Oakley</spanan>
-                </div>
-                <div class="user_buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </div>
-        </div>
-        <div class="titles">
-            <h2 class="portfolio">Your Projects</h2>
-            <h2 class="announcements">Announcements</h2>
-        </div>
-        <div class="main">
-            <div class="projects">
-                <div class="card">
-                    <h2>Awesome project</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorum in pariatur rem vel? Aliquid ad praesentium, molestiae sequi iusto voluptatem vitae possimus recusandae, ipsam architecto atque, modi labore nam!</p>
-                    <div class="icons">
-                        <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
-                        <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
-                        <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+            <div class="header">
+                <div class="searchBar">
+                    <div class="search">
+                        <img src="svg/magnify.svg" alt="search icon" width="24" height="24">
+                        <input type="search" name="search" id="search">
                     </div>
-                </div>
-                <div class="card">
-                    <h2>Easy power</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, exercitationem ipsum. Impedit quisquam vitae adipisci ducimus sit necessitatibus libero nisi alias, quod, repellendus dolore sed fuga nemo accusamus quo! Reiciendis!</p>
-                    <div class="icons">
-                        <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
-                        <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
-                        <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Nearly impossible to pull off</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum provident vero molestiae quasi, quos ex error quis dolor minus harum, numquam nihil minima adipisci quod, qui voluptatibus laborum laboriosam.</p>
-                    <div class="icons">
-                        <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
-                        <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
-                        <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Extra ordinary</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, debitis ipsum magnam expedita quod exercitationem, eius at, doloremque porro ab fugiat provident? Iste dolorum provident sapiente earum! Veritatis, aut eos!</p>
-                    <div class="icons">
-                        <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
-                        <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
-                        <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Money tree</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique recusandae sequi vitae? Aut quibusdam vitae harum ipsa praesentium commodi, facere placeat excepturi, recusandae dolorem molestiae. Labore, a esse! Vitae!</p>
-                    <div class="icons">
-                        <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
-                        <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
-                        <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2>Super cool</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, accusantium aut. Illum, saepe illo? Expedita mollitia ab consequuntur sed pariatur neque corrupti perspiciatis, alias modi eveniet temporibus tenetur! Perferendis, minus?</p>
-                    <div class="icons">
-                        <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
-                        <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
-                        <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
-                    </div>
-                </div>
-            </div>
-            <div class="aside">
-                <div class="announcements">
-                    <div>
-                        <h3>Site Maintenance</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam commodi a, pariatur laboriosam rem, voluptatibus.</p>
-                    </div>
-                    <div>
-                        <h3>Community Share Day</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque non enim ipsum facere provident libero omnis.</p>
-                    </div>
-                    <div>
-                        <h3>Updated Privacy Policy</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia ipsa adipisci ab illo repudiandae, nostrum.</p>
-                    </div>
-                </div>
-                <h2>Trending</h2>
-                <div class="trending">
-                    <div>
-                        <img src="profiles/apple-9219346.svg" alt="apple profile photo" width="48" height="48">
-                        <div>
-                            <span class="handle">@tigan</span>
-                            <span>World Peace Builder</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="profiles/bat-9196198.svg" alt="bat profile photo" width="48" height="48">
-                        <div>
-                            <span class="handle">@morgan</span>
-                            <span>Vicarious Builder</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="profiles/caveman-159359.svg" alt="caveman profile photo" width="48" height="48">
-                        <div>
-                            <span class="handle">@kendall</span>
-                            <span>Your Daily Dev</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="profiles/spiderman-7810368.svg" alt="spiderman profile photo" width="48" height="48">
-                        <div>
-                            <span class="handle">@alex</span>
-                            <span>No Traffic Here</span>
+                    <div class="user_profile">
+                        <img src="profiles/bat-9196198.svg" alt="a bat image" width="48" height="48">
+                        <div class="text">
+                            <span class="greeting">Hi there,</span>
+                            <span class="name">Morgan Oakley(@morgan)</span>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div class="profile">
+                        <div class="notification">
+                            <img src="svg/bell-ring.svg" alt="notification icon" width="24" height="24">
+                        </div>    
+                        <img src="profiles/bat-9196198.svg" alt="a bat image" width="36" height="36">
+                        <span>Morgan Oakley</span>
+                    </div>
+                    <div class="user_buttons">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="titles">
+                <h2 class="portfolio">Your Projects</h2>
+                <h2 class="announcements">Announcements</h2>
+            </div>
+            <div class="main">
+                <div class="projects">
+                    <div class="card">
+                        <h2>Awesome project</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorum in pariatur rem vel? Aliquid ad praesentium, molestiae sequi iusto voluptatem vitae possimus recusandae, ipsam architecto atque, modi labore nam!</p>
+                        <div class="icons">
+                            <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
+                            <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
+                            <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Easy power</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, exercitationem ipsum. Impedit quisquam vitae adipisci ducimus sit necessitatibus libero nisi alias, quod, repellendus dolore sed fuga nemo accusamus quo! Reiciendis!</p>
+                        <div class="icons">
+                            <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
+                            <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
+                            <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Nearly impossible to pull off</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum provident vero molestiae quasi, quos ex error quis dolor minus harum, numquam nihil minima adipisci quod, qui voluptatibus laborum laboriosam.</p>
+                        <div class="icons">
+                            <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
+                            <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
+                            <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Extra ordinary</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, debitis ipsum magnam expedita quod exercitationem, eius at, doloremque porro ab fugiat provident? Iste dolorum provident sapiente earum! Veritatis, aut eos!</p>
+                        <div class="icons">
+                            <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
+                            <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
+                            <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Money tree</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique recusandae sequi vitae? Aut quibusdam vitae harum ipsa praesentium commodi, facere placeat excepturi, recusandae dolorem molestiae. Labore, a esse! Vitae!</p>
+                        <div class="icons">
+                            <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
+                            <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
+                            <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Super cool</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, accusantium aut. Illum, saepe illo? Expedita mollitia ab consequuntur sed pariatur neque corrupti perspiciatis, alias modi eveniet temporibus tenetur! Perferendis, minus?</p>
+                        <div class="icons">
+                            <img src="svg/star-plus-outline.svg" alt="star icon" width="24" height="24">
+                            <img src="svg/eye-plus-outline.svg" alt="watch icon" width="24" height="24">
+                            <img src="svg/source-fork.svg" alt="fork icon" width="24" height="24">
+                        </div>
+                    </div>
+                </div>
+                <div class="aside">
+                    <div class="announcements">
+                        <div>
+                            <h3>Site Maintenance</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam commodi a, pariatur laboriosam rem, voluptatibus.</p>
+                        </div>
+                        <div>
+                            <h3>Community Share Day</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque non enim ipsum facere provident libero omnis.</p>
+                        </div>
+                        <div>
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia ipsa adipisci ab illo repudiandae, nostrum.</p>
+                        </div>
+                    </div>
+                    <h2>Trending</h2>
+                    <div class="trending">
+                        <div>
+                            <img src="profiles/apple-9219346.svg" alt="apple profile photo" width="48" height="48">
+                            <div>
+                                <span class="handle">@tigan</span>
+                                <span>World Peace Builder</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="profiles/bat-9196198.svg" alt="bat profile photo" width="48" height="48">
+                            <div>
+                                <span class="handle">@morgan</span>
+                                <span>Vicarious Builder</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="profiles/caveman-159359.svg" alt="caveman profile photo" width="48" height="48">
+                            <div>
+                                <span class="handle">@kendall</span>
+                                <span>Your Daily Dev</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="profiles/spiderman-7810368.svg" alt="spiderman profile photo" width="48" height="48">
+                            <div>
+                                <span class="handle">@alex</span>
+                                <span>No Traffic Here</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
