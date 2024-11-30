@@ -3,7 +3,7 @@
 }
 
 .container {
-    height: 1150px;
+    height: min-content;
     display: grid;
     grid-template-columns: 0.5fr 2fr;
     grid-template-rows: repeat(12, 1fr);
@@ -70,7 +70,6 @@ h2, p {
 
 .aside > .announcements {
     border-radius: 10px;
-    background-color: wheat;
     margin-top: 10px;
 }
 
@@ -131,8 +130,6 @@ h2, p {
 
 .card {
     box-sizing: border-box;
-    border: 1px solid aquamarine;
-    background-color: pink;
     border-radius: 8px;
     padding: 5px 16px;
     border-left: 5px solid orange;
